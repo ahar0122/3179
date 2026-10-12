@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Average Number of Standard Drinks Consumed Per Week",
+  "data": {
+    "url": "https://raw.githubusercontent.com/ahar0122/3179/refs/heads/main/multiset%20bar%20chart.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": {"type": "bar", "tooltip": true},
+  "encoding": {
+    "x": {
+      "field": "state",
+      "type": "nominal",
+      "title": "State or Territory",
+      "sort": [
+        "New South Wales",
+        "Victoria",
+        "Queensland",
+        "South Australia",
+        "Western Australia",
+        "Tasmania",
+        "Northern Territory",
+        "Australian Capital Territory"
+      ],
+      "axis": {"labelAngle": -25, "labelLimit": 150}
+    },
+    "y": {
+      "field": "proportion",
+      "type": "quantitative",
+      "title": "Proportion of population (%)",
+      "stack": "normalize",
+      "axis": {"format": ".0%"}
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "title": "Drinking category",
+      "scale": {
+        "domain": ["Abstainers", "Under 10", "Over 10"],
+        "range": ["#4C78A8", "#72B7B2", "#E45756"]
+      },
+      "sort": ["Abstainers", "Under 10", "Over 10"]
+    },
+    "tooltip": [
+      {"field": "state", "type": "nominal", "title": "State"},
+      {"field": "category", "type": "nominal", "title": "Category"},
+      {
+        "field": "proportion",
+        "type": "quantitative",
+        "title": "Proportion (%)",
+        "format": ".1f"
+      }
+    ]
+  },
+  "width": "container",
+  "height": 400,
+  "config": {
+    "axis": {"grid": false},
+    "view": {"stroke": null},
+    "legend": {"orient": "top"}
+  }
+}
