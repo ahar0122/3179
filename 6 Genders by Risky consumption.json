@@ -1,0 +1,134 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "How alcohol risk status has changed by gender",
+    "subtitle": "Share of both genders in each category, 2007 to 2022–2023",
+    "anchor": "start"
+  },
+  "params": [
+    {
+      "name": "selectedRegion",
+      "value": "Australia",
+      "bind": {
+        "input": "select",
+        "name": "Region: ",
+        "options": [
+          "Australia",
+          "New South Wales",
+          "Victoria",
+          "Queensland",
+          "Western Australia",
+          "South Australia",
+          "Tasmania",
+          "ACT",
+          "Northern Territory"
+        ]
+      }
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/ahar0122/3179/refs/heads/main/alcohol_risk_status.csv",
+    "format": {"type": "csv", "parse": {"Year": "string", "Percent": "number"}}
+  },
+  "transform": [{"filter": "datum.Region === selectedRegion"}],
+  "facet": {
+    "column": {
+      "field": "Gender",
+      "type": "nominal",
+      "sort": ["Male", "Female"],
+      "title": null,
+      "header": {"labelFontSize": 15, "labelFontWeight": "bold"}
+    }
+  },
+  "spec": {
+    "width": 380,
+    "height": 320,
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "ordinal",
+        "title": null,
+        "sort": ["2007", "2010", "2013", "2016", "2019", "2022–2023"],
+        "scale": {"type": "point", "padding": 0.8},
+        "axis": {"labelAngle": -30, "labelFontSize": 11, "grid": false}
+      },
+      "y": {
+        "field": "Percent",
+        "type": "quantitative",
+        "title": "% of people",
+        "scale": {"domain": [0, 70], "nice": false},
+        "axis": {"tickCount": 7, "gridDash": [2, 3]}
+      },
+      "color": {
+        "field": "RiskCategory",
+        "type": "nominal",
+        "title": "Risk category",
+        "sort": ["Risky consumption", "Not at risk", "Abstainers"],
+        "scale": {
+          "domain": ["Risky consumption", "Not at risk", "Abstainers"],
+          "range": ["#d1495b", "#2b7bba", "#8a8a8a"]
+        },
+        "legend": {"orient": "top", "labelFontSize": 12}
+      }
+    },
+    "layer": [
+      {"mark": {"type": "line", "strokeWidth": 3, "interpolate": "linear"}},
+      {
+        "mark": {"type": "point", "filled": true, "size": 70, "opacity": 1},
+        "encoding": {
+          "tooltip": [
+            {"field": "Region", "type": "nominal"},
+            {"field": "Gender", "type": "nominal"},
+            {
+              "field": "RiskCategory",
+              "type": "nominal",
+              "title": "Risk category"
+            },
+            {"field": "Year", "type": "ordinal"},
+            {
+              "field": "Percent",
+              "type": "quantitative",
+              "format": ".1f",
+              "title": "Percent (%)"
+            },
+            {
+              "field": "UseWithCaution",
+              "type": "nominal",
+              "title": "Use with caution"
+            }
+          ]
+        }
+      },
+      {
+        "transform": [{"filter": "datum.Year === '2007'"}],
+        "mark": {
+          "type": "text",
+          "align": "right",
+          "dx": -9,
+          "fontSize": 12,
+          "fontWeight": "bold"
+        },
+        "encoding": {
+          "text": {"field": "Percent", "type": "quantitative", "format": ".1f"}
+        }
+      },
+      {
+        "transform": [{"filter": "datum.Year === '2022–2023'"}],
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "dx": 9,
+          "fontSize": 12,
+          "fontWeight": "bold"
+        },
+        "encoding": {
+          "text": {"field": "Percent", "type": "quantitative", "format": ".1f"}
+        }
+      }
+    ]
+  },
+  "config": {
+    "view": {"stroke": null},
+    "axis": {"labelFontSize": 11, "titleFontSize": 12}
+  }
+}
