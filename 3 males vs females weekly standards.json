@@ -1,0 +1,103 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Alcohol consumption by sex over time",
+    "subtitle": "Share of each sex (%) who abstain, drink under 10, or drink over 10 standard drinks per week",
+    "anchor": "start"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/ahar0122/3179/refs/heads/main/males%20vs%20female%20standards%20per%20week.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {
+      "calculate": "datum.Sex === 'Male' ? -datum.Percent : datum.Percent",
+      "as": "SignedPercent"
+    }
+  ],
+  "facet": {
+    "column": {
+      "field": "Category",
+      "type": "nominal",
+      "sort": ["Abstainers", "Under 10", "Over 10"],
+      "title": null,
+      "header": {
+        "labelFontSize": 14,
+        "labelFontWeight": "bold",
+        "labelOrient": "top"
+      }
+    }
+  },
+  "spec": {
+    "width": 220,
+    "height": 240,
+    "layer": [
+      {
+        "mark": {"type": "bar", "tooltip": true, "height": {"band": 0.8}},
+        "encoding": {
+          "y": {
+            "field": "Year",
+            "type": "ordinal",
+            "title": null,
+            "sort": "ascending",
+            "axis": {"domain": false, "ticks": false}
+          },
+          "x": {
+            "field": "SignedPercent",
+            "type": "quantitative",
+            "title": "Males ← % → Females",
+            "scale": {"domain": [-70, 70]},
+            "axis": {
+              "labelExpr": "abs(datum.value)",
+              "grid": true,
+              "tickCount": 7
+            }
+          },
+          "color": {
+            "field": "Sex",
+            "type": "nominal",
+            "scale": {
+              "domain": ["Male", "Female"],
+              "range": ["#2b7bba", "#e75480"]
+            },
+            "legend": {"title": "Sex", "orient": "top"}
+          },
+          "tooltip": [
+            {"field": "Sex", "type": "nominal"},
+            {"field": "Category", "type": "nominal"},
+            {"field": "Year", "type": "ordinal"},
+            {
+              "field": "Percent",
+              "type": "quantitative",
+              "format": ".1f",
+              "title": "Percent (%)"
+            }
+          ]
+        }
+      },
+      {
+        "transform": [{"filter": "datum.Sex === 'Male'"}],
+        "mark": {"type": "text", "align": "right", "dx": -4, "fontSize": 10},
+        "encoding": {
+          "y": {"field": "Year", "type": "ordinal", "sort": "ascending"},
+          "x": {"field": "SignedPercent", "type": "quantitative"},
+          "text": {"field": "Percent", "type": "quantitative", "format": ".1f"}
+        }
+      },
+      {
+        "transform": [{"filter": "datum.Sex === 'Female'"}],
+        "mark": {"type": "text", "align": "left", "dx": 4, "fontSize": 10},
+        "encoding": {
+          "y": {"field": "Year", "type": "ordinal", "sort": "ascending"},
+          "x": {"field": "SignedPercent", "type": "quantitative"},
+          "text": {"field": "Percent", "type": "quantitative", "format": ".1f"}
+        }
+      }
+    ]
+  },
+  "resolve": {"axis": {"y": "shared"}},
+  "config": {
+    "view": {"stroke": null},
+    "axis": {"labelFontSize": 11, "titleFontSize": 12}
+  }
+}
