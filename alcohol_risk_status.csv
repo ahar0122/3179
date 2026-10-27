@@ -1,0 +1,325 @@
+Region,Gender,RiskCategory,Year,Percent,UseWithCaution
+New South Wales,Male,Abstainers,2007,16.4,N
+New South Wales,Male,Abstainers,2010,18.5,N
+New South Wales,Male,Abstainers,2013,20.3,N
+New South Wales,Male,Abstainers,2016,20.8,N
+New South Wales,Male,Abstainers,2019,24.4,N
+New South Wales,Male,Abstainers,2022–2023,23.5,N
+Victoria,Male,Abstainers,2007,14.5,N
+Victoria,Male,Abstainers,2010,19,N
+Victoria,Male,Abstainers,2013,19.9,N
+Victoria,Male,Abstainers,2016,20.2,N
+Victoria,Male,Abstainers,2019,21.4,N
+Victoria,Male,Abstainers,2022–2023,24.6,N
+Queensland,Male,Abstainers,2007,13.3,N
+Queensland,Male,Abstainers,2010,14,N
+Queensland,Male,Abstainers,2013,16,N
+Queensland,Male,Abstainers,2016,17.8,N
+Queensland,Male,Abstainers,2019,17,N
+Queensland,Male,Abstainers,2022–2023,19.1,N
+Western Australia,Male,Abstainers,2007,10.2,N
+Western Australia,Male,Abstainers,2010,14,N
+Western Australia,Male,Abstainers,2013,13.3,N
+Western Australia,Male,Abstainers,2016,23.7,N
+Western Australia,Male,Abstainers,2019,24.6,N
+Western Australia,Male,Abstainers,2022–2023,21.1,N
+South Australia,Male,Abstainers,2007,12.5,N
+South Australia,Male,Abstainers,2010,16.7,N
+South Australia,Male,Abstainers,2013,20.4,N
+South Australia,Male,Abstainers,2016,19,N
+South Australia,Male,Abstainers,2019,18.9,N
+South Australia,Male,Abstainers,2022–2023,18.4,N
+Tasmania,Male,Abstainers,2007,11.2,N
+Tasmania,Male,Abstainers,2010,10.3,N
+Tasmania,Male,Abstainers,2013,13.9,N
+Tasmania,Male,Abstainers,2016,15.8,N
+Tasmania,Male,Abstainers,2019,16.3,N
+Tasmania,Male,Abstainers,2022–2023,12.9,N
+ACT,Male,Abstainers,2007,11,N
+ACT,Male,Abstainers,2010,12,N
+ACT,Male,Abstainers,2013,15.6,N
+ACT,Male,Abstainers,2016,18.3,N
+ACT,Male,Abstainers,2019,18.7,N
+ACT,Male,Abstainers,2022–2023,14.8,N
+Northern Territory,Male,Abstainers,2007,11.5,N
+Northern Territory,Male,Abstainers,2010,13,N
+Northern Territory,Male,Abstainers,2013,14.1,N
+Northern Territory,Male,Abstainers,2016,21.1,N
+Northern Territory,Male,Abstainers,2019,18.9,N
+Northern Territory,Male,Abstainers,2022–2023,25,N
+Australia,Male,Abstainers,2007,14.2,N
+Australia,Male,Abstainers,2010,16.8,N
+Australia,Male,Abstainers,2013,18.3,N
+Australia,Male,Abstainers,2016,20.1,N
+Australia,Male,Abstainers,2019,21.5,N
+Australia,Male,Abstainers,2022–2023,21.9,N
+New South Wales,Male,Not at risk,2007,36.3,N
+New South Wales,Male,Not at risk,2010,35.4,N
+New South Wales,Male,Not at risk,2013,36.7,N
+New South Wales,Male,Not at risk,2016,39,N
+New South Wales,Male,Not at risk,2019,36.3,N
+New South Wales,Male,Not at risk,2022–2023,37,N
+Victoria,Male,Not at risk,2007,37.4,N
+Victoria,Male,Not at risk,2010,36,N
+Victoria,Male,Not at risk,2013,37,N
+Victoria,Male,Not at risk,2016,39,N
+Victoria,Male,Not at risk,2019,39.6,N
+Victoria,Male,Not at risk,2022–2023,41.5,N
+Queensland,Male,Not at risk,2007,35.6,N
+Queensland,Male,Not at risk,2010,31.9,N
+Queensland,Male,Not at risk,2013,36,N
+Queensland,Male,Not at risk,2016,34.8,N
+Queensland,Male,Not at risk,2019,36.9,N
+Queensland,Male,Not at risk,2022–2023,39.8,N
+Western Australia,Male,Not at risk,2007,36.1,N
+Western Australia,Male,Not at risk,2010,33.9,N
+Western Australia,Male,Not at risk,2013,33.3,N
+Western Australia,Male,Not at risk,2016,32.5,N
+Western Australia,Male,Not at risk,2019,32.9,N
+Western Australia,Male,Not at risk,2022–2023,38.7,N
+South Australia,Male,Not at risk,2007,36.1,N
+South Australia,Male,Not at risk,2010,37.1,N
+South Australia,Male,Not at risk,2013,30.7,N
+South Australia,Male,Not at risk,2016,39,N
+South Australia,Male,Not at risk,2019,37.3,N
+South Australia,Male,Not at risk,2022–2023,40.5,N
+Tasmania,Male,Not at risk,2007,33.3,N
+Tasmania,Male,Not at risk,2010,38.8,N
+Tasmania,Male,Not at risk,2013,36.1,N
+Tasmania,Male,Not at risk,2016,37.4,N
+Tasmania,Male,Not at risk,2019,41.7,N
+Tasmania,Male,Not at risk,2022–2023,41.9,N
+ACT,Male,Not at risk,2007,40,N
+ACT,Male,Not at risk,2010,41.8,N
+ACT,Male,Not at risk,2013,33.9,N
+ACT,Male,Not at risk,2016,39.7,N
+ACT,Male,Not at risk,2019,46.8,N
+ACT,Male,Not at risk,2022–2023,51.9,N
+Northern Territory,Male,Not at risk,2007,26.9,N
+Northern Territory,Male,Not at risk,2010,29.8,N
+Northern Territory,Male,Not at risk,2013,29.4,N
+Northern Territory,Male,Not at risk,2016,26.1,N
+Northern Territory,Male,Not at risk,2019,30.5,N
+Northern Territory,Male,Not at risk,2022–2023,30.5,N
+Australia,Male,Not at risk,2007,36.3,N
+Australia,Male,Not at risk,2010,34.9,N
+Australia,Male,Not at risk,2013,35.7,N
+Australia,Male,Not at risk,2016,37.3,N
+Australia,Male,Not at risk,2019,37.2,N
+Australia,Male,Not at risk,2022–2023,39.5,Y
+New South Wales,Male,Risky consumption,2007,47.3,N
+New South Wales,Male,Risky consumption,2010,46.1,N
+New South Wales,Male,Risky consumption,2013,43,N
+New South Wales,Male,Risky consumption,2016,40.2,N
+New South Wales,Male,Risky consumption,2019,39.2,N
+New South Wales,Male,Risky consumption,2022–2023,39.4,N
+Victoria,Male,Risky consumption,2007,48.1,N
+Victoria,Male,Risky consumption,2010,44.9,N
+Victoria,Male,Risky consumption,2013,43.1,N
+Victoria,Male,Risky consumption,2016,40.8,N
+Victoria,Male,Risky consumption,2019,39,N
+Victoria,Male,Risky consumption,2022–2023,33.9,N
+Queensland,Male,Risky consumption,2007,51.1,N
+Queensland,Male,Risky consumption,2010,54.1,N
+Queensland,Male,Risky consumption,2013,48,N
+Queensland,Male,Risky consumption,2016,47.4,N
+Queensland,Male,Risky consumption,2019,46.1,N
+Queensland,Male,Risky consumption,2022–2023,41,Y
+Western Australia,Male,Risky consumption,2007,53.7,N
+Western Australia,Male,Risky consumption,2010,52.1,N
+Western Australia,Male,Risky consumption,2013,53.3,N
+Western Australia,Male,Risky consumption,2016,43.8,N
+Western Australia,Male,Risky consumption,2019,42.6,N
+Western Australia,Male,Risky consumption,2022–2023,40.2,N
+South Australia,Male,Risky consumption,2007,51.4,N
+South Australia,Male,Risky consumption,2010,46.2,N
+South Australia,Male,Risky consumption,2013,48.8,N
+South Australia,Male,Risky consumption,2016,42.1,N
+South Australia,Male,Risky consumption,2019,43.8,N
+South Australia,Male,Risky consumption,2022–2023,41.1,N
+Tasmania,Male,Risky consumption,2007,55.5,N
+Tasmania,Male,Risky consumption,2010,50.9,N
+Tasmania,Male,Risky consumption,2013,50,N
+Tasmania,Male,Risky consumption,2016,46.8,N
+Tasmania,Male,Risky consumption,2019,42,N
+Tasmania,Male,Risky consumption,2022–2023,45.2,N
+ACT,Male,Risky consumption,2007,49,N
+ACT,Male,Risky consumption,2010,46.1,N
+ACT,Male,Risky consumption,2013,50.5,N
+ACT,Male,Risky consumption,2016,42.1,N
+ACT,Male,Risky consumption,2019,34.5,N
+ACT,Male,Risky consumption,2022–2023,33.3,N
+Northern Territory,Male,Risky consumption,2007,61.6,N
+Northern Territory,Male,Risky consumption,2010,57.2,N
+Northern Territory,Male,Risky consumption,2013,56.5,N
+Northern Territory,Male,Risky consumption,2016,52.8,N
+Northern Territory,Male,Risky consumption,2019,50.6,N
+Northern Territory,Male,Risky consumption,2022–2023,44.5,N
+Australia,Male,Risky consumption,2007,49.5,N
+Australia,Male,Risky consumption,2010,48.3,N
+Australia,Male,Risky consumption,2013,46,N
+Australia,Male,Risky consumption,2016,42.6,N
+Australia,Male,Risky consumption,2019,41.2,N
+Australia,Male,Risky consumption,2022–2023,38.6,Y
+New South Wales,Female,Abstainers,2007,23.8,N
+New South Wales,Female,Abstainers,2010,25.7,N
+New South Wales,Female,Abstainers,2013,26.9,N
+New South Wales,Female,Abstainers,2016,26.4,N
+New South Wales,Female,Abstainers,2019,27.6,N
+New South Wales,Female,Abstainers,2022–2023,28.4,N
+Victoria,Female,Abstainers,2007,20.4,N
+Victoria,Female,Abstainers,2010,24,N
+Victoria,Female,Abstainers,2013,25.9,N
+Victoria,Female,Abstainers,2016,25.6,N
+Victoria,Female,Abstainers,2019,26.1,N
+Victoria,Female,Abstainers,2022–2023,22.1,N
+Queensland,Female,Abstainers,2007,17.3,N
+Queensland,Female,Abstainers,2010,20.4,N
+Queensland,Female,Abstainers,2013,22,N
+Queensland,Female,Abstainers,2016,22.3,N
+Queensland,Female,Abstainers,2019,22.5,N
+Queensland,Female,Abstainers,2022–2023,23.3,N
+Western Australia,Female,Abstainers,2007,16.8,N
+Western Australia,Female,Abstainers,2010,20.1,N
+Western Australia,Female,Abstainers,2013,20.8,N
+Western Australia,Female,Abstainers,2016,27.3,N
+Western Australia,Female,Abstainers,2019,29.6,N
+Western Australia,Female,Abstainers,2022–2023,24.1,Y
+South Australia,Female,Abstainers,2007,19.4,N
+South Australia,Female,Abstainers,2010,22,N
+South Australia,Female,Abstainers,2013,19.1,N
+South Australia,Female,Abstainers,2016,23.3,N
+South Australia,Female,Abstainers,2019,23.2,N
+South Australia,Female,Abstainers,2022–2023,21.1,N
+Tasmania,Female,Abstainers,2007,18,N
+Tasmania,Female,Abstainers,2010,19,N
+Tasmania,Female,Abstainers,2013,18.7,N
+Tasmania,Female,Abstainers,2016,18.6,N
+Tasmania,Female,Abstainers,2019,17.3,N
+Tasmania,Female,Abstainers,2022–2023,17.1,N
+ACT,Female,Abstainers,2007,12.3,N
+ACT,Female,Abstainers,2010,15,N
+ACT,Female,Abstainers,2013,17.3,N
+ACT,Female,Abstainers,2016,21.7,N
+ACT,Female,Abstainers,2019,21.1,N
+ACT,Female,Abstainers,2022–2023,23.2,N
+Northern Territory,Female,Abstainers,2007,17.8,N
+Northern Territory,Female,Abstainers,2010,14.8,N
+Northern Territory,Female,Abstainers,2013,17.8,N
+Northern Territory,Female,Abstainers,2016,25.7,N
+Northern Territory,Female,Abstainers,2019,25.1,N
+Northern Territory,Female,Abstainers,2022–2023,21.6,N
+Australia,Female,Abstainers,2007,20.3,N
+Australia,Female,Abstainers,2010,22.9,N
+Australia,Female,Abstainers,2013,24,N
+Australia,Female,Abstainers,2016,25,N
+Australia,Female,Abstainers,2019,25.8,N
+Australia,Female,Abstainers,2022–2023,24.3,N
+New South Wales,Female,Not at risk,2007,50,N
+New South Wales,Female,Not at risk,2010,48.8,N
+New South Wales,Female,Not at risk,2013,50.2,N
+New South Wales,Female,Not at risk,2016,49.3,N
+New South Wales,Female,Not at risk,2019,50.1,N
+New South Wales,Female,Not at risk,2022–2023,48.5,N
+Victoria,Female,Not at risk,2007,55.8,N
+Victoria,Female,Not at risk,2010,50.6,N
+Victoria,Female,Not at risk,2013,51.3,N
+Victoria,Female,Not at risk,2016,51.8,N
+Victoria,Female,Not at risk,2019,53.2,N
+Victoria,Female,Not at risk,2022–2023,58,N
+Queensland,Female,Not at risk,2007,53.5,N
+Queensland,Female,Not at risk,2010,48.2,N
+Queensland,Female,Not at risk,2013,51.5,N
+Queensland,Female,Not at risk,2016,52.7,N
+Queensland,Female,Not at risk,2019,51,N
+Queensland,Female,Not at risk,2022–2023,51.1,N
+Western Australia,Female,Not at risk,2007,51.4,N
+Western Australia,Female,Not at risk,2010,51.3,N
+Western Australia,Female,Not at risk,2013,51.8,N
+Western Australia,Female,Not at risk,2016,47.5,N
+Western Australia,Female,Not at risk,2019,47.1,N
+Western Australia,Female,Not at risk,2022–2023,48.9,N
+South Australia,Female,Not at risk,2007,52.8,N
+South Australia,Female,Not at risk,2010,50.5,N
+South Australia,Female,Not at risk,2013,55.6,N
+South Australia,Female,Not at risk,2016,51.5,N
+South Australia,Female,Not at risk,2019,52,N
+South Australia,Female,Not at risk,2022–2023,55.1,N
+Tasmania,Female,Not at risk,2007,55.5,N
+Tasmania,Female,Not at risk,2010,56,N
+Tasmania,Female,Not at risk,2013,56.3,N
+Tasmania,Female,Not at risk,2016,58.5,N
+Tasmania,Female,Not at risk,2019,58.1,N
+Tasmania,Female,Not at risk,2022–2023,59.6,N
+ACT,Female,Not at risk,2007,59.2,N
+ACT,Female,Not at risk,2010,55.6,N
+ACT,Female,Not at risk,2013,56.6,N
+ACT,Female,Not at risk,2016,59.7,N
+ACT,Female,Not at risk,2019,57.6,N
+ACT,Female,Not at risk,2022–2023,55.6,N
+Northern Territory,Female,Not at risk,2007,51,N
+Northern Territory,Female,Not at risk,2010,50.1,N
+Northern Territory,Female,Not at risk,2013,44.1,N
+Northern Territory,Female,Not at risk,2016,42.9,N
+Northern Territory,Female,Not at risk,2019,43.4,N
+Northern Territory,Female,Not at risk,2022–2023,42.3,N
+Australia,Female,Not at risk,2007,52.8,N
+Australia,Female,Not at risk,2010,49.8,N
+Australia,Female,Not at risk,2013,51.5,N
+Australia,Female,Not at risk,2016,50.9,N
+Australia,Female,Not at risk,2019,51.2,N
+Australia,Female,Not at risk,2022–2023,52.3,N
+New South Wales,Female,Risky consumption,2007,26.2,N
+New South Wales,Female,Risky consumption,2010,25.5,N
+New South Wales,Female,Risky consumption,2013,22.9,N
+New South Wales,Female,Risky consumption,2016,24.3,N
+New South Wales,Female,Risky consumption,2019,22.3,N
+New South Wales,Female,Risky consumption,2022–2023,23.1,N
+Victoria,Female,Risky consumption,2007,23.8,N
+Victoria,Female,Risky consumption,2010,25.4,N
+Victoria,Female,Risky consumption,2013,22.8,N
+Victoria,Female,Risky consumption,2016,22.6,N
+Victoria,Female,Risky consumption,2019,20.7,N
+Victoria,Female,Risky consumption,2022–2023,19.9,N
+Queensland,Female,Risky consumption,2007,29.2,N
+Queensland,Female,Risky consumption,2010,31.4,N
+Queensland,Female,Risky consumption,2013,26.5,N
+Queensland,Female,Risky consumption,2016,25,N
+Queensland,Female,Risky consumption,2019,26.5,N
+Queensland,Female,Risky consumption,2022–2023,25.6,N
+Western Australia,Female,Risky consumption,2007,31.8,N
+Western Australia,Female,Risky consumption,2010,28.7,N
+Western Australia,Female,Risky consumption,2013,27.4,N
+Western Australia,Female,Risky consumption,2016,25.2,N
+Western Australia,Female,Risky consumption,2019,23.3,N
+Western Australia,Female,Risky consumption,2022–2023,27,N
+South Australia,Female,Risky consumption,2007,27.8,N
+South Australia,Female,Risky consumption,2010,27.5,N
+South Australia,Female,Risky consumption,2013,25.3,N
+South Australia,Female,Risky consumption,2016,25.2,N
+South Australia,Female,Risky consumption,2019,24.7,N
+South Australia,Female,Risky consumption,2022–2023,23.8,N
+Tasmania,Female,Risky consumption,2007,26.5,N
+Tasmania,Female,Risky consumption,2010,25,N
+Tasmania,Female,Risky consumption,2013,25,N
+Tasmania,Female,Risky consumption,2016,22.9,N
+Tasmania,Female,Risky consumption,2019,24.6,N
+Tasmania,Female,Risky consumption,2022–2023,23.3,N
+ACT,Female,Risky consumption,2007,28.5,N
+ACT,Female,Risky consumption,2010,29.4,N
+ACT,Female,Risky consumption,2013,26.1,N
+ACT,Female,Risky consumption,2016,18.6,N
+ACT,Female,Risky consumption,2019,21.3,N
+ACT,Female,Risky consumption,2022–2023,21.2,N
+Northern Territory,Female,Risky consumption,2007,31.3,N
+Northern Territory,Female,Risky consumption,2010,35.1,N
+Northern Territory,Female,Risky consumption,2013,38.1,N
+Northern Territory,Female,Risky consumption,2016,31.4,N
+Northern Territory,Female,Risky consumption,2019,31.5,N
+Northern Territory,Female,Risky consumption,2022–2023,36.1,N
+Australia,Female,Risky consumption,2007,26.9,N
+Australia,Female,Risky consumption,2010,27.2,N
+Australia,Female,Risky consumption,2013,24.5,N
+Australia,Female,Risky consumption,2016,24.1,N
+Australia,Female,Risky consumption,2019,23.1,N
+Australia,Female,Risky consumption,2022–2023,23.3,N
