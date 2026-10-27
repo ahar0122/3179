@@ -1,0 +1,74 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Total alcohol consumption per capita",
+    "subtitle": "Litres of pure alcohol consumed per person per year by country",
+    "anchor": "start"
+  },
+  "width": 900,
+  "height": 480,
+  "projection": {"type": "naturalEarth1"},
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/ahar0122/3179/refs/heads/main/world-110m.for%20alcohol%20in%20litres.json",
+        "format": {"type": "topojson", "feature": "countries"}
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#e9e9e9",
+        "stroke": "#ffffff",
+        "strokeWidth": 0.5
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/ahar0122/3179/refs/heads/main/world%20alcohol%20per%20capita%20data.csv",
+        "format": {"type": "csv"}
+      },
+      "mark": {
+        "type": "circle",
+        "opacity": 0.6,
+        "stroke": "#7f15b0",
+        "strokeWidth": 0.7,
+        "tooltip": true
+      },
+      "encoding": {
+        "longitude": {"field": "Longitude", "type": "quantitative"},
+        "latitude": {"field": "Latitude", "type": "quantitative"},
+        "size": {
+          "field": "Value",
+          "type": "quantitative",
+          "scale": {"type": "linear", "domain": [0, 18], "range": [0, 700]},
+          "legend": {
+            "title": "Litres per capita",
+            "orient": "bottom-left",
+            "values": [2, 6, 10, 14, 17],
+            "symbolFillColor": "#e07b39",
+            "symbolOpacity": 0.6
+          }
+        },
+        "color": {
+          "field": "Value",
+          "type": "quantitative",
+          "scale": {"scheme": "purples", "domain": [0, 18]},
+          "legend": null
+        },
+        "order": {
+          "field": "Value",
+          "type": "quantitative",
+          "sort": "descending"
+        },
+        "tooltip": [
+          {"field": "Location", "type": "nominal", "title": "Country"},
+          {
+            "field": "Value",
+            "type": "quantitative",
+            "title": "Litres per capita"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {"view": {"stroke": null}}
+}
