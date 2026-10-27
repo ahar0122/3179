@@ -1,37 +1,37 @@
-﻿Sex,Category,Year,Percent,,,
-Male,Abstainers,2007,14,,,
-Male,Abstainers,2010.0,16.8,,,
-Male,Abstainers,2013.0,18.3,,,
-Male,Abstainers,2016.0,20.1,,,
-Male,Abstainers,2019,21.5,,,
-Male,Abstainers,2022–2023,21.9,,,
-Male,Under 10,2007.0,44.3,,,
-Male,Under 10,2010.0,42.9,,,
-Male,Under 10,2013,44.2,,,
-Male,Under 10,2016,45.4,,,
-Male,Under 10,2019,45,,,
-Male,Under 10,2022–2023,46.3,,,
-Male,Over 10,2007,41.6,,,
-Male,Over 10,2010,40.4,,,
-Male,Over 10,2013,37.5,,,
-Male,Over 10,2016,34.5,,,
-Male,Over 10,2019,33.4,,,
-Male,Over 10,2022–2023,31.8,,,
-Female,Abstainers,2007,20.3,,,
-Female,Abstainers,2010,22.9,,,
-Female,Abstainers,2013,24,,,
-Female,Abstainers,2016,25,,,
-Female,Abstainers,2019,25.8,,,
-Female,Abstainers,2022–2023,24.3,,,
-Female,Under 10,2007,59.1,,,
-Female,Under 10,2010,56.3,,,
-Female,Under 10,2013,57.6,,,
-Female,Under 10,2016,56.8,,,
-Female,Under 10,2019,57.5,,,
-Female,Under 10,2022–2023,57.8,,,
-Female,Over 10,2007,20.6,,,
-Female,Over 10,2010,20.7,,,
-Female,Over 10,2013,18.4,,,
-Female,Over 10,2016,18.2,,,
-Female,Over 10,2019,16.7,,,
-Female,Over 10,2022–2023,17.8,,,
+﻿Sex,Category,Year,Percent
+Male,Abstainers,2007,14
+Male,Abstainers,2010.0,16.8
+Male,Abstainers,2013.0,18.3
+Male,Abstainers,2016.0,20.1
+Male,Abstainers,2019,21.5
+Male,Abstainers,2022–2023,21.9
+Male,Under 10,2007.0,44.3
+Male,Under 10,2010.0,42.9
+Male,Under 10,2013,44.2
+Male,Under 10,2016,45.4
+Male,Under 10,2019,45
+Male,Under 10,2022–2023,46.3
+Male,Over 10,2007,41.6
+Male,Over 10,2010,40.4
+Male,Over 10,2013,37.5
+Male,Over 10,2016,34.5
+Male,Over 10,2019,33.4
+Male,Over 10,2022–2023,31.8
+Female,Abstainers,2007,20.3
+Female,Abstainers,2010,22.9
+Female,Abstainers,2013,24
+Female,Abstainers,2016,25
+Female,Abstainers,2019,25.8
+Female,Abstainers,2022–2023,24.3
+Female,Under 10,2007,59.1
+Female,Under 10,2010,56.3
+Female,Under 10,2013,57.6
+Female,Under 10,2016,56.8
+Female,Under 10,2019,57.5
+Female,Under 10,2022–2023,57.8
+Female,Over 10,2007,20.6
+Female,Over 10,2010,20.7
+Female,Over 10,2013,18.4
+Female,Over 10,2016,18.2
+Female,Over 10,2019,16.7
+Female,Over 10,2022–2023,17.8
