@@ -1,0 +1,110 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Australia's alcohol consumption changes by beverage",
+    "subtitle": "Litres of pure alcohol per capita , 1960 to 2024",
+    "anchor": "start"
+  },
+  "width": 800,
+  "height": 380,
+  "data": {
+    "url": "https://raw.githubusercontent.com/ahar0122/3179/refs/heads/main/alcohol_by_beverage.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {
+      "calculate": "datum.Beverage === 'Beer' ? 0 : datum.Beverage === 'Wine' ? 1 : datum.Beverage === 'Spirits & RTDs' ? 2 : 3",
+      "as": "BeverageOrder"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {"type": "area", "interpolate": "monotone", "opacity": 0.9},
+      "encoding": {
+        "x": {
+          "field": "StartYear",
+          "type": "quantitative",
+          "title": "Year",
+          "axis": {"format": "d", "tickCount": 13, "grid": false},
+          "scale": {"nice": false}
+        },
+        "y": {
+          "field": "LitresPerCapita",
+          "type": "quantitative",
+          "stack": "center",
+          "axis": null
+        },
+        "color": {
+          "field": "Beverage",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Beer", "Wine", "Spirits & RTDs", "Cider"],
+            "range": ["#e0a030", "#9b2d4f", "#2a7f8e", "#7fa650"]
+          },
+          "legend": {"title": "Beverage", "orient": "top"}
+        },
+        "order": {"field": "BeverageOrder", "type": "quantitative"}
+      }
+    },
+    {
+      "transform": [
+        {
+          "pivot": "Beverage",
+          "value": "LitresPerCapita",
+          "groupby": ["StartYear", "FinancialYear"]
+        }
+      ],
+      "mark": {"type": "rule", "color": "#333", "strokeWidth": 1},
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["StartYear"],
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "encoding": {
+        "x": {"field": "StartYear", "type": "quantitative"},
+        "opacity": {
+          "condition": {"param": "hover", "empty": false, "value": 0.7},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "FinancialYear", "type": "nominal", "title": "Year"},
+          {
+            "field": "Beer",
+            "type": "quantitative",
+            "format": ".2f",
+            "title": "Beer (L)"
+          },
+          {
+            "field": "Wine",
+            "type": "quantitative",
+            "format": ".2f",
+            "title": "Wine (L)"
+          },
+          {
+            "field": "Spirits & RTDs",
+            "type": "quantitative",
+            "format": ".2f",
+            "title": "Spirits & RTDs (L)"
+          },
+          {
+            "field": "Cider",
+            "type": "quantitative",
+            "format": ".2f",
+            "title": "Cider (L)"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {"stroke": null},
+    "axis": {"labelFontSize": 11, "titleFontSize": 12}
+  }
+}
