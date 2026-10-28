@@ -1,0 +1,70 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Beer Consumption by Strength",
+    "subtitle": "Share of total litres of beer ('000 litres)"
+  },
+  "description": "Pie chart of beer consumption by strength category in 2024.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/ahar0122/3179/refs/heads/main/beer_consumption_2024.csv"
+  },
+  "width": 400,
+  "height": 400,
+  "transform": [
+    {"joinaggregate": [{"op": "sum", "field": "Litres_000", "as": "Total"}]},
+    {"calculate": "datum.Litres_000 / datum.Total", "as": "Share"}
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "arc",
+        "outerRadius": 150,
+        "stroke": "#ffffff",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "theta": {"field": "Litres_000", "type": "quantitative", "stack": true},
+        "color": {
+          "field": "Strength",
+          "type": "nominal",
+          "sort": ["Low strength", "Mid strength", "Full strength"],
+          "scale": {
+            "domain": ["Low strength", "Mid strength", "Full strength"],
+            "range": ["#f4c95d", "#e8943a", "#a8501c"]
+          },
+          "legend": {"title": "Beer strength"}
+        },
+        "order": {
+          "field": "Litres_000",
+          "type": "quantitative",
+          "sort": "descending"
+        },
+        "tooltip": [
+          {"field": "Strength", "title": "Strength"},
+          {"field": "Litres_000", "title": "Litres ('000)", "format": ","},
+          {"field": "Share", "title": "Share", "format": ".1%"}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "radius": 100,
+        "fontSize": 13,
+        "fontWeight": "bold",
+        "color": "#ffffff"
+      },
+      "encoding": {
+        "theta": {"field": "Litres_000", "type": "quantitative", "stack": true},
+        "order": {
+          "field": "Litres_000",
+          "type": "quantitative",
+          "sort": "descending"
+        },
+        "text": {"field": "Share", "type": "quantitative", "format": ".1%"}
+      }
+    }
+  ],
+  "view": {"stroke": null},
+  "config": {}
+}
