@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {"text": "Wine Consumption by Type", "subtitle": "Litres of wine"},
+  "description": "Bar chart of wine consumption by type in 2024.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/ahar0122/3179/refs/heads/main/wine_consumption_2024.csv"
+  },
+  "width": 400,
+  "height": 350,
+  "encoding": {
+    "x": {
+      "field": "Type",
+      "type": "nominal",
+      "sort": ["White wine", "Red wine", "Other wines"],
+      "title": null,
+      "axis": {"labelAngle": 0, "labelFontSize": 13}
+    },
+    "y": {
+      "field": "Litres_000",
+      "type": "quantitative",
+      "title": "Litres",
+      "axis": {"format": ",.0f", "formatType": "number", "labelOverlap": true}
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "cornerRadiusTopLeft": 4,
+        "cornerRadiusTopRight": 4
+      },
+      "encoding": {
+        "color": {
+          "field": "Type",
+          "type": "nominal",
+          "scale": {
+            "domain": ["White wine", "Red wine", "Other wines"],
+            "range": ["#e6d27a", "#8c1c2e", "#b08aa8"]
+          },
+          "legend": null
+        },
+        "tooltip": [
+          {"field": "Type", "title": "Type"},
+          {"field": "Litres_000", "title": "Litres ('000)", "format": ",.0f"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "text", "dy": -8, "fontSize": 12, "fontWeight": "bold"},
+      "encoding": {
+        "text": {
+          "field": "Litres_000",
+          "type": "quantitative",
+          "format": ",.0f"
+        }
+      }
+    }
+  ],
+  "config": {"view": {"stroke": null}, "axisY": {"gridColor": "#eeeeee"}}
+}
