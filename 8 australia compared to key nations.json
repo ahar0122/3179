@@ -1,0 +1,77 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Alcohol Consumption: Australia vs Key Nations",
+    "subtitle": "Litres of pure alcohol per capita"
+  },
+  "description": "Lollipop chart comparing alcohol consumption per capita for Australia and selected countries.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/ahar0122/3179/refs/heads/main/alcohol_consumption_selected.csv"
+  },
+  "width": 550,
+  "height": 480,
+  "transform": [
+    {
+      "calculate": "datum.Location === 'United States of America' ? 'United States' : datum.Location === 'Russian Federation' ? 'Russia' : datum.Location",
+      "as": "Country"
+    },
+    {
+      "calculate": "datum.Location === 'Australia' ? 'Australia' : 'Other'",
+      "as": "Group"
+    },
+    {"calculate": "0", "as": "Zero"}
+  ],
+  "encoding": {
+    "y": {
+      "field": "Country",
+      "type": "nominal",
+      "sort": "-x",
+      "title": null,
+      "axis": {"labelFontSize": 12, "ticks": false, "domain": false}
+    },
+    "color": {
+      "field": "Group",
+      "type": "nominal",
+      "scale": {
+        "domain": ["Australia", "Other"],
+        "range": ["#e8590c", "#8fa3b8"]
+      },
+      "legend": null
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "rule", "strokeWidth": 3},
+      "encoding": {
+        "x": {
+          "field": "Zero",
+          "type": "quantitative",
+          "title": "Litres of pure alcohol per capita"
+        },
+        "x2": {"field": "Value"}
+      }
+    },
+    {
+      "mark": {"type": "circle", "size": 260, "opacity": 1},
+      "encoding": {
+        "x": {"field": "Value", "type": "quantitative"},
+        "tooltip": [
+          {"field": "Location", "title": "Country"},
+          {"field": "Value", "title": "Litres per capita"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "text", "align": "left", "dx": 14, "fontSize": 11},
+      "encoding": {
+        "x": {"field": "Value", "type": "quantitative"},
+        "text": {"field": "Value", "type": "quantitative", "format": ".1f"},
+        "color": {"value": "#333333"}
+      }
+    }
+  ],
+  "config": {
+    "view": {"stroke": null},
+    "axisX": {"grid": true, "gridColor": "#eeeeee"}
+  }
+}
