@@ -1,0 +1,199 @@
+Location,Value,Continent
+Cameroon,12.9,Africa
+Reunion,10.6,Africa
+Seychelles,9,Africa
+South Africa,8.6,Africa
+Mauritius,8.5,Africa
+Namibia,8.5,Africa
+Gabon,8,Africa
+Eswatini,6.1,Africa
+Zimbabwe,5.4,Africa
+Equatorial Guinea,5.3,Africa
+Botswana,4.9,Africa
+Burkina Faso,4.9,Africa
+Sao Tome and Principe,4.3,Africa
+Cote d'Ivoire,4.2,Africa
+Lesotho,4.2,Africa
+Benin,4.1,Africa
+Cabo Verde,4.1,Africa
+Rwanda,4.1,Africa
+Uganda,4,Africa
+Congo,3.9,Africa
+Angola,3.8,Africa
+Burundi,3.5,Africa
+Guinea-Bissau,3.1,Africa
+Chad,3,Africa
+Ghana,2.6,Africa
+Ethiopia,2.3,Africa
+Kenya,2.2,Africa
+Zambia,2.1,Africa
+Mali,2,Africa
+Mozambique,2,Africa
+Nigeria,2,Africa
+Central African Republic,1.8,Africa
+Liberia,1.7,Africa
+Tunisia,1.7,Africa
+Democratic Republic of the Congo,1.6,Africa
+Togo,1.5,Africa
+United Republic of Tanzania,1.5,Africa
+Eritrea,1.4,Africa
+Sudan,1.4,Africa
+Malawi,1,Africa
+Madagascar,0.7,Africa
+Gambia,0.5,Africa
+Guinea,0.5,Africa
+Morocco,0.5,Africa
+Algeria,0.4,Africa
+South Sudan,0.4,Africa
+Djibouti,0.3,Africa
+Senegal,0.3,Africa
+Sierra Leone,0.2,Africa
+Comoros,0.1,Africa
+Egypt,0.1,Africa
+Niger,0.1,Africa
+Libya,0,Africa
+Mauritania,0,Africa
+Somalia,0,Africa
+Georgia,14.4,Asia
+Viet Nam,10.7,Asia
+Republic of Korea,8.3,Asia
+Thailand,7.9,Asia
+Mongolia,7.1,Asia
+Armenia,6.6,Asia
+Japan,6.3,Asia
+Philippines,6.1,Asia
+Kazakhstan,6,Asia
+Laos,5.9,Asia
+India,5.2,Asia
+Cyprus,4.9,Asia
+Cambodia,4.2,Asia
+Israel,4.2,Asia
+China,3.7,Asia
+Kyrgyzstan,3.3,Asia
+Bhutan,3.1,Asia
+Democratic People's Republic of Korea,2.6,Asia
+Maldives,2.5,Asia
+Sri Lanka,2.5,Asia
+Azerbaijan,2.3,Asia
+Singapore,2.2,Asia
+Turkey,2.2,Asia
+Uzbekistan,2.1,Asia
+Bahrain,2,Asia
+Lebanon,2,Asia
+Nepal,2,Asia
+Myanmar,1.9,Asia
+Turkmenistan,1.5,Asia
+Qatar,1.3,Asia
+Oman,1.2,Asia
+Malaysia,0.8,Asia
+Tajikistan,0.7,Asia
+Iraq,0.6,Asia
+United Arab Emirates,0.6,Asia
+Jordan,0.3,Asia
+Timor-Leste,0.2,Asia
+Indonesia,0.1,Asia
+Kuwait,0.1,Asia
+Pakistan,0.1,Asia
+Syrian Arab Republic,0.1,Asia
+Afghanistan,0,Asia
+Bangladesh,0,Asia
+Brunei,0,Asia
+Iran,0,Asia
+Yemen,0,Asia
+Romania,17.1,Europe
+Latvia,14.2,Europe
+Portugal,13.7,Europe
+Czechia,13.5,Europe
+Bulgaria,13.2,Europe
+Republic of Moldova,13,Europe
+Spain,12.1,Europe
+Andorra,11.6,Europe
+Austria,11.6,Europe
+Poland,11.5,Europe
+Hungary,11.4,Europe
+Luxembourg,11.4,Europe
+Belarus,11.3,Europe
+France,11.2,Europe
+Lithuania,11.2,Europe
+Serbia,11.2,Europe
+Croatia,10.9,Europe
+Germany,10.9,Europe
+Slovenia,10.7,Europe
+Estonia,10.4,Europe
+Russian Federation,10.4,Europe
+United Kingdom,10.4,Europe
+Ireland,10.3,Europe
+Montenegro,10.2,Europe
+Belgium,9.5,Europe
+Denmark,9.5,Europe
+Finland,9.4,Europe
+Slovakia,9.1,Europe
+Switzerland,8.8,Europe
+Sweden,8.7,Europe
+Greece,8.6,Europe
+Netherlands,8.6,Europe
+Italy,8.4,Europe
+Iceland,7.7,Europe
+Malta,7.6,Europe
+Norway,7,Europe
+Bosnia and Herzegovina,6.6,Europe
+North Macedonia,6.2,Europe
+Albania,4.3,Europe
+Ukraine,3.9,Europe
+Turks and Caicos Islands,14.7,North America
+Aruba,12,North America
+Saint Lucia,11.8,North America
+Cayman Islands,11.7,North America
+Bermuda,11,North America
+British Virgin Islands,10.7,North America
+Barbados,10.1,North America
+United States of America,9.6,North America
+Canada,9.2,North America
+Grenada,8.6,North America
+Saint Vincent and the Grenadines,8.4,North America
+Saint Kitts and Nevis,8.3,North America
+Antigua and Barbuda,8.2,North America
+Bahamas,8.1,North America
+Dominica,7.3,North America
+Panama,7.2,North America
+Mexico,6.7,North America
+Cuba,5.5,North America
+Dominican Republic,5.2,North America
+Belize,5,North America
+Trinidad and Tobago,5,North America
+Jamaica,4.4,North America
+Nicaragua,4.3,North America
+Costa Rica,4,North America
+El Salvador,3.6,North America
+Haiti,3.5,North America
+Honduras,3.5,North America
+Guatemala,3.1,North America
+Brazil,10.4,South America
+Argentina,7.1,South America
+Paraguay,6.9,South America
+Chile,6.6,South America
+Guyana,6.5,South America
+Suriname,6,South America
+Uruguay,5.8,South America
+Colombia,4.9,South America
+Peru,4.8,South America
+Bolivia,3.8,South America
+Ecuador,3.2,South America
+Venezuela,2.6,South America
+Australia,10.5,Oceania
+Cook Islands,10.2,Oceania
+New Zealand,8.9,Oceania
+New Caledonia,8.2,Oceania
+French Polynesia,7.4,Oceania
+Fiji,3.5,Oceania
+Samoa,2.9,Oceania
+Niue,2.1,Oceania
+Vanuatu,2.1,Oceania
+Papua New Guinea,1,Oceania
+Micronesia,0.8,Oceania
+Marshall Islands,0.7,Oceania
+Kiribati,0.6,Oceania
+Solomon Islands,0.6,Oceania
+Tonga,0.2,Oceania
+Nauru,0,Oceania
+Tuvalu,0,Oceania
