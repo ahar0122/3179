@@ -1,0 +1,95 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Alcohol Consumption per Capita by Continent",
+    "subtitle": "Each dot is a country or territory, boxes show the median and quartiles for each continent"
+  },
+  "description": "Jittered strip plot with boxplot overlay showing the distribution of per-capita alcohol consumption within each continent.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/ahar0122/3179/refs/heads/main/alcohol_by_continent.csv"
+  },
+  "width": 600,
+  "height": 380,
+  "transform": [{"calculate": "random()", "as": "jitter"}],
+  "encoding": {
+    "y": {
+      "field": "Continent",
+      "type": "nominal",
+      "sort": {"field": "Value", "op": "median", "order": "descending"},
+      "title": null,
+      "axis": {"labelFontSize": 13, "ticks": false, "domain": false}
+    },
+    "color": {
+      "field": "Continent",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Africa",
+          "Asia",
+          "Europe",
+          "North America",
+          "South America",
+          "Oceania"
+        ],
+        "range": [
+          "#d9a441",
+          "#d1495b",
+          "#3d6fb6",
+          "#2e9c78",
+          "#8e5ea2",
+          "#4cb5c9"
+        ]
+      },
+      "legend": null
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "boxplot",
+        "extent": 1.5,
+        "opacity": 0.25,
+        "size": 70,
+        "median": {"color": "#222222", "strokeWidth": 2},
+        "outliers": false
+      },
+      "encoding": {
+        "x": {
+          "field": "Value",
+          "type": "quantitative",
+          "title": "Litres of pure alcohol per capita",
+          "scale": {"zero": true}
+        }
+      }
+    },
+    {
+      "mark": {"type": "circle", "size": 55, "opacity": 0.8},
+      "encoding": {
+        "x": {"field": "Value", "type": "quantitative"},
+        "yOffset": {
+          "field": "jitter",
+          "type": "quantitative",
+          "scale": {"domain": [0, 1], "range": [-28, 28]}
+        },
+        "tooltip": [
+          {"field": "Location", "title": "Country"},
+          {"field": "Continent", "title": "Continent"},
+          {"field": "Value", "title": "Litres per capita"}
+        ]
+      }
+    },
+    {
+      "transform": [{"filter": "datum.Location === 'Australia'"}],
+      "mark": {
+        "type": "text",
+        "text": "Australia",
+        "dy": -34,
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "#222222"
+      },
+      "encoding": {"x": {"field": "Value", "type": "quantitative"}}
+    }
+  ],
+  "config": {"view": {"stroke": null}, "axisX": {"gridColor": "#eeeeee"}}
+}
